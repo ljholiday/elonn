@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>ELONN</title>
+  <title>TEST</title>
   <link rel="stylesheet" href="css/lcars.css">
   <style>
   p, h1, h2, h3 {
@@ -42,7 +42,7 @@
 			<div class="lcars-elbow left-bottom lcars-golden-tanoi-bg"></div>
 			<!-- BAR WITH TITLE -->
 			<div class="lcars-bar left-space horizontal">
-				<div class="lcars-title right">ELONN</div>
+				<div class="lcars-title right">TEST</div>
 			</div>
 			<!-- ROUNDED EDGE DECORATED -->
 			<div class="lcars-bar horizontal right-end decorated"></div>
@@ -50,7 +50,7 @@
 
 		<!-- SIDE MENU ================================================= -->
 
-            <!--#include file="includes/nav-main.txt"-->
+            <!--#include file="includes/nav-test.txt"-->
 
 
 		<!-- FOOTER ==================================================== -->
@@ -70,8 +70,8 @@
 			<div class="lcars-column lcars-u-5">
 
 				<h1>ELONN</h1>
-                                <p> Get rid of the stupid sounds. Keep one or two cool sounds. Get rid of the relentless noise!
-                                <p> This is not ready for prime time. At least not ready for responsive. The menu just truncates. Not scrollable.
+                                <p> This is the test page.
+                                <p> Get rid of the stupid sounds.
 
 			</div>
 

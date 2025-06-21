@@ -1,0 +1,15 @@
+		<!-- SIDE MENU ================================================= -->
+
+		<div id="left-menu" class="lcars-column start-space lcars-u-1" style="text-transform: uppercase;">
+			<a href="https://elonn.com"><div class="lcars-element button lcars-chestnut-rose-bg">Home</div></a>
+			<a href="https://elonn.com/test.html"><div class="lcars-element button lcars-chestnut-rose-bg">Test</div></a>
+			<a href="https://elonn.com/scope.html"><div class="lcars-element button">Scope</div></a>
+			<a href="https://elonn.com/big-picture.html"><div class="lcars-element button">Big Picture</div></a>
+			<a href="https://elonn.com/actions.html"><div class="lcars-element button">Actions</div></a>
+			<a href="https://elonn.com/resources.html"><div class="lcars-element button">Resources</div></a>
+			<a href="https://elonn.com/notes.html"><div class="lcars-element button">Notes</div></a>
+			<a href="https://elonn.com/about.html"><div class="lcars-element button">About</div></a>
+			<a href="https://github.com/joernweissenborn/lcars" target="_blank"><div class="lcars-element button lcars-lavender-purple-bg">SRC</div></a>
+			<!-- FILLER -->
+			<div class="lcars-bar lcars-u-1"></div>
+		</div>
