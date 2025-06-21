@@ -26,7 +26,7 @@ var lcarsAudio = {
 		//Determine browser capability and willingness
 		for (var key in this.audioExtensions) {
 			if (auDummy.canPlayType("audio/"+this.audioExtensions[key]) != '') {
-				auDummy.src = this.audioPath + "ready." + key;
+				auDummy.src = this.audioPath + "keyok." + key;
 				//TODO: test it further??
 				console.log(auDummy.src + "   " +auDummy.src.lastIndexOf(".")); 
 				this.audioType =  auDummy.src.slice(auDummy.src.lastIndexOf(".") + 1);
@@ -39,7 +39,7 @@ var lcarsAudio = {
 		this.audTactInputNegAcknowledge = new Audio("audio/tactinput_neg_acknowledge." + this.audioType);
 		this.audAlert = new Audio("audio/alert." + this.audioType);
 		this.audRedAlert = new Audio("audio/red_alert." + this.audioType);
-		this.audReady = new Audio("audio/ready." + this.audioType);
+		this.audReady = new Audio("audio/keyok." + this.audioType);
 
 		//Actual Standard Wire-up steps
 		var button_list = document.querySelectorAll("#container div.lcars-element.button, div.lcars-app-container div.lcars-element.button");

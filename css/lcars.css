@@ -377,6 +377,8 @@ h6 {
   background-color: #696969;
   outline: 1px solid #696969;
 }
+
+
 body {
   background-color: #000;
 }
@@ -494,6 +496,7 @@ body {
 .lcars-column.start-space {
   margin-top: 0.25rem;
 }
+/* elbows */
 .lcars-elbow {
   position: relative;
   width: 9.5rem;
@@ -563,6 +566,11 @@ body {
   bottom: 1.5rem;
   border-bottom-right-radius: 1.875rem;
 }
+/* end elbows */
+
+
+
+/* bars */
 .lcars-bar {
   position: relative;
   color: #000;
@@ -659,6 +667,10 @@ body {
   float: right;
   margin-right: 0.83335rem;
 }
+/* end bars */
+
+
+
 .lcars-element {
   position: relative;
   font-weight: bold;

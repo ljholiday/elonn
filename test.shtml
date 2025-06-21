@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TEST</title>
   <link rel="stylesheet" href="css/test.css">
+
   <style>
   p, h1, h2, h3 {
     margin-top: 1em;
@@ -57,6 +59,7 @@
 				<h1>ELONN</h1>
                                 <p> This is the test page.
             <!--#include file="includes/divider-top.txt"-->
+            <!--#include file="includes/divider-bottom.txt"-->
 <p>Want to simplify your life?</p>
 <p>You&#8217;re not going to do this, but</p>
 <p>If you were serious in a perfect world, you would google &#8220;estate sale company &lt;your city&gt;&#8221;, call the first number, give them a key to your house and a piece of paper with an address to mail the check to.&nbsp;</p>

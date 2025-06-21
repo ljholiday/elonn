@@ -1,0 +1,12 @@
+        <div id="divider-bottom" class="lcars-row">
+            <!-- ELBOW -->
+            <div class="lcars-elbow-small left-bottom lcars-golden-tanoi-bg"></div>
+            <!-- BAR WITH TITLE -->
+            <div class="lcars-bar-narrow left-space horizontal"></div>
+            <!-- ROUNDED EDGE DECORATED -->
+            <div class="lcars-bar-narrow horizontal right-end decorated">
+				<div class="lcars-title right">ELONN</div>
+            </div>
+        </div>
+
+

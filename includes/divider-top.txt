@@ -1,16 +1,8 @@
         <div id="divider-top" class="lcars-row">
             <!-- ELBOW -->
-            <div class="lcars-elbow left-top lcars-golden-tanoi-bg"></div>
-            <!-- BAR-->
-            <div class="lcars-bar left-space horizontal bottom"></div>
-            <!-- ROUNDED EDGE DECORATED -->
-            <div class="lcars-bar horizontal bottom right-end decorated"></div>
-        </div>
-        <div id="divider-top" class="lcars-row">
-            <!-- ELBOW -->
             <div class="lcars-elbow-small left-top lcars-golden-tanoi-bg"></div>
             <!-- BAR-->
             <div class="lcars-bar-narrow left-space horizontal bottom"></div>
             <!-- ROUNDED EDGE DECORATED -->
-            <div class="lcars-bar horizontal bottom right-end decorated"></div>
+            <div class="lcars-bar-narrow horizontal bottom right-end decorated"></div>
         </div>
