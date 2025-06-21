@@ -1,0 +1,8 @@
+        <div id="footer" class="lcars-row ">
+            <!-- ELBOW -->
+            <div class="lcars-elbow left-top lcars-golden-tanoi-bg"></div>
+            <!-- BAR -->
+            <div class="lcars-bar horizontal left-space both-divider bottom"></div>
+            <!-- ROUNDED EDGE -->
+            <div class="lcars-bar horizontal left-space right-end left-divider bottom"></div>
+        </div>
