@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elonn</title>
+    <meta name="description" content="Elonn is the shared identity and world platform for spatial tools, personal environments, and future product experiences.">
+    <link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+    <header class="site-header" aria-label="Primary">
+        <a class="brand" href="/">Elonn</a>
+        <nav class="nav" aria-label="Primary navigation">
+            <a href="https://world.elonn.com">World</a>
+            <a href="https://api.elonn.com/health">API</a>
+            <a href="#docs">Docs</a>
+            <a class="nav__button" href="#login">Sign in</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content">
+                <p class="eyebrow">Shared identity for spatial software</p>
+                <h1 id="hero-title">Elonn</h1>
+                <p class="hero__summary">
+                    The account, API, and world layer for tools that move between browser surfaces, persistent rooms, and future AR clients.
+                </p>
+                <div class="actions" aria-label="Primary actions">
+                    <a class="button button--primary" href="https://world.elonn.com">Open World</a>
+                    <a class="button" href="#login">Sign in</a>
+                </div>
+            </div>
+            <div class="status-panel" aria-label="Platform status">
+                <div>
+                    <span>API</span>
+                    <strong>api.elonn.com</strong>
+                </div>
+                <div>
+                    <span>World</span>
+                    <strong>world.elonn.com</strong>
+                </div>
+                <div>
+                    <span>Identity</span>
+                    <strong>API-owned</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="login" aria-labelledby="login-title">
+            <div class="section__heading">
+                <p class="eyebrow">Account entry</p>
+                <h2 id="login-title">Sign in is next</h2>
+            </div>
+            <div class="grid">
+                <article class="card">
+                    <h3>Current state</h3>
+                    <p>Identity endpoints exist in the API. The public login UI will live here and call the API when the membership flow is ready.</p>
+                </article>
+                <article class="card">
+                    <h3>World access</h3>
+                    <p>World remains a separate product surface and will validate accounts through api.elonn.com instead of connecting to the API database.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="docs" aria-labelledby="docs-title">
+            <div class="section__heading">
+                <p class="eyebrow">Platform map</p>
+                <h2 id="docs-title">Service boundaries</h2>
+            </div>
+            <div class="boundary-list">
+                <div>
+                    <span>elonn.com</span>
+                    <p>Landing page, login, product navigation, and documentation.</p>
+                </div>
+                <div>
+                    <span>api.elonn.com</span>
+                    <p>JSON API for identity, sessions, and product memberships.</p>
+                </div>
+                <div>
+                    <span>world.elonn.com</span>
+                    <p>The spatial world product. Product data stays separate from identity data.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

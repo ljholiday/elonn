@@ -1,0 +1,252 @@
+:root {
+    color-scheme: dark;
+    --bg: #08110f;
+    --panel: #10201d;
+    --panel-strong: #172c28;
+    --text: #edf7ef;
+    --muted: #a8b9ad;
+    --line: #31544b;
+    --accent: #9ee6b8;
+    --accent-strong: #f0d36b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    background:
+        linear-gradient(180deg, rgba(42, 82, 74, 0.55), rgba(8, 17, 15, 0) 34rem),
+        radial-gradient(circle at 78% 10%, rgba(158, 230, 184, 0.16), transparent 22rem),
+        var(--bg);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 1.25rem 0;
+}
+
+.brand {
+    font-size: 1.1rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.nav a {
+    padding: 0.55rem 0.7rem;
+}
+
+.nav__button,
+.button {
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(16, 32, 29, 0.72);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 340px;
+    gap: 2rem;
+    align-items: end;
+    width: min(1120px, calc(100% - 2rem));
+    min-height: calc(100vh - 86px);
+    margin: 0 auto;
+    padding: 5rem 0 4rem;
+}
+
+.hero__content {
+    max-width: 760px;
+}
+
+.eyebrow {
+    margin: 0 0 1rem;
+    color: var(--accent);
+    font-family: "Courier New", monospace;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(4rem, 14vw, 10rem);
+    line-height: 0.82;
+}
+
+h2 {
+    margin-bottom: 0.75rem;
+    font-size: clamp(2rem, 4vw, 4.2rem);
+    line-height: 0.95;
+}
+
+h3 {
+    margin-bottom: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.hero__summary {
+    max-width: 680px;
+    color: var(--muted);
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    line-height: 1.45;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 2rem;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    font-weight: 700;
+}
+
+.button--primary {
+    border-color: transparent;
+    background: var(--accent-strong);
+    color: #1f1a06;
+}
+
+.status-panel,
+.card,
+.boundary-list > div {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(16, 32, 29, 0.78);
+    box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+.status-panel {
+    display: grid;
+    gap: 1px;
+    overflow: hidden;
+    background: var(--line);
+}
+
+.status-panel div {
+    padding: 1rem;
+    background: var(--panel);
+}
+
+.status-panel span,
+.boundary-list span {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--muted);
+    font-family: "Courier New", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.status-panel strong {
+    display: block;
+    font-size: 1.05rem;
+}
+
+.section {
+    width: min(1120px, calc(100% - 2rem));
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.section__heading {
+    max-width: 740px;
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.card,
+.boundary-list > div {
+    padding: 1.2rem;
+}
+
+.card p,
+.boundary-list p {
+    margin-bottom: 0;
+    color: var(--muted);
+    line-height: 1.55;
+}
+
+.boundary-list {
+    display: grid;
+    gap: 0.75rem;
+}
+
+@media (max-width: 760px) {
+    .site-header,
+    .nav,
+    .hero,
+    .grid {
+        display: block;
+    }
+
+    .nav {
+        margin-top: 1rem;
+    }
+
+    .nav a {
+        display: inline-flex;
+        margin: 0 0.35rem 0.45rem 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 3rem;
+    }
+
+    .status-panel {
+        margin-top: 2rem;
+    }
+
+    .card + .card {
+        margin-top: 1rem;
+    }
+}

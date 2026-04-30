@@ -2,7 +2,7 @@
 # (Place in domain subdirectories like /public_html/motorheadmeditation.com/)
 
 # Set default index files and enable server-side includes
-DirectoryIndex index.shtml index.html index.htm
+DirectoryIndex index.html index.shtml index.htm
 AddHandler server-parsed .shtml
 Options Indexes FollowSymLinks Includes
 
@@ -22,4 +22,3 @@ Options -Indexes
 # RewriteEngine On
 # RewriteCond %{HTTPS} off
 # RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
