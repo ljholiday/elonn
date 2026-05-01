@@ -4,86 +4,84 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Elonn</title>
-    <meta name="description" content="Elonn is the shared identity and world platform for spatial tools, personal environments, and future product experiences.">
+    <meta name="description" content="Elonn is the new front page for a spatial internet: a world layer for places, tools, and persistent digital presence.">
     <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
     <header class="site-header" aria-label="Primary">
         <a class="brand" href="/">Elonn</a>
         <nav class="nav" aria-label="Primary navigation">
-            <a href="https://world.elonn.com">World</a>
-            <a href="https://api.elonn.com/health">API</a>
-            <a href="#docs">Docs</a>
-            <a class="nav__button" href="#login">Sign in</a>
+            <a class="nav__cta" data-env-link="world" href="https://world.elonn.com/world">Enter World</a>
         </nav>
     </header>
 
     <main>
         <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__media" aria-hidden="true"></div>
             <div class="hero__content">
-                <p class="eyebrow">Shared identity for spatial software</p>
+                <p class="eyebrow">The world layer is coming online</p>
                 <h1 id="hero-title">Elonn</h1>
                 <p class="hero__summary">
-                    The account, API, and world layer for tools that move between browser surfaces, persistent rooms, and future AR clients.
+                    A new front page for the spatial internet: places, people, tools, and live digital surfaces arranged around you instead of buried in tabs.
                 </p>
                 <div class="actions" aria-label="Primary actions">
-                    <a class="button button--primary" href="https://world.elonn.com">Open World</a>
-                    <a class="button" href="#login">Sign in</a>
-                </div>
-            </div>
-            <div class="status-panel" aria-label="Platform status">
-                <div>
-                    <span>API</span>
-                    <strong>api.elonn.com</strong>
-                </div>
-                <div>
-                    <span>World</span>
-                    <strong>world.elonn.com</strong>
-                </div>
-                <div>
-                    <span>Identity</span>
-                    <strong>API-owned</strong>
+                    <a class="button button--primary" data-env-link="world" href="https://world.elonn.com/world">Enter World</a>
                 </div>
             </div>
         </section>
 
-        <section class="section" id="login" aria-labelledby="login-title">
-            <div class="section__heading">
-                <p class="eyebrow">Account entry</p>
-                <h2 id="login-title">Sign in is next</h2>
-            </div>
-            <div class="grid">
-                <article class="card">
-                    <h3>Current state</h3>
-                    <p>Identity endpoints exist in the API. The public login UI will live here and call the API when the membership flow is ready.</p>
-                </article>
-                <article class="card">
-                    <h3>World access</h3>
-                    <p>World remains a separate product surface and will validate accounts through api.elonn.com instead of connecting to the API database.</p>
-                </article>
-            </div>
+        <section class="story" id="world" aria-labelledby="world-title">
+            <p class="eyebrow">A browser becomes a place</p>
+            <h2 id="world-title">Step through a page and into a world.</h2>
+            <p>
+                Elonn turns the web into a spatial starting point. The screen becomes a room, the room becomes a map, and every surface can become a tool you carry with you.
+            </p>
         </section>
 
-        <section class="section" id="docs" aria-labelledby="docs-title">
-            <div class="section__heading">
-                <p class="eyebrow">Platform map</p>
-                <h2 id="docs-title">Service boundaries</h2>
+        <section class="overview" aria-label="World principles">
+            <article>
+                <span>Room Layer</span>
+                <h2>Objects stay in the world.</h2>
+                <p>Markers, places, and future map objects belong to the surrounding environment so movement has direction and context.</p>
+            </article>
+
+            <article>
+                <span>Carry Layer</span>
+                <h2>Tools stay with you.</h2>
+                <p>Windows, controls, and personal surfaces remain close at hand while the world moves behind them.</p>
+            </article>
+
+            <article>
+                <span>Persistent Presence</span>
+                <h2>The front page remembers.</h2>
+                <p>Your world can become the place you return to for work, local discovery, communication, and augmented reality.</p>
+            </article>
+        </section>
+
+        <section class="access" id="access" aria-labelledby="access-title">
+            <div>
+                <p class="eyebrow">Live demo</p>
+                <h2 id="access-title">The first doorway is open.</h2>
             </div>
-            <div class="boundary-list">
-                <div>
-                    <span>elonn.com</span>
-                    <p>Landing page, login, product navigation, and documentation.</p>
-                </div>
-                <div>
-                    <span>api.elonn.com</span>
-                    <p>JSON API for identity, sessions, and product memberships.</p>
-                </div>
-                <div>
-                    <span>world.elonn.com</span>
-                    <p>The spatial world product. Product data stays separate from identity data.</p>
-                </div>
+            <div>
+                <p>
+                    The web demo is live now as the first public shape of Elonn World. Account access, memberships, and native AR clients will follow as the platform hardens.
+                </p>
+                <a class="button button--primary" data-env-link="world" href="https://world.elonn.com/world">Enter World</a>
             </div>
         </section>
     </main>
+
+    <script>
+        (function () {
+            if (window.location.hostname !== 'elonn.local') {
+                return;
+            }
+
+            document.querySelectorAll('[data-env-link="world"]').forEach(function (link) {
+                link.href = 'http://world.elonn.local/world';
+            });
+        }());
+    </script>
 </body>
 </html>
