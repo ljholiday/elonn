@@ -170,6 +170,7 @@ h2 {
 
 .overview,
 .story,
+.app-preview,
 .access {
     width: min(1180px, calc(100% - 2rem));
     margin: 0 auto;
@@ -198,6 +199,7 @@ h2 {
 }
 
 .overview article,
+.app-preview,
 .access {
     border: 1px solid var(--line);
     background: var(--panel);
@@ -232,20 +234,30 @@ h2 {
     font-weight: 800;
 }
 
+.app-preview,
 .access {
     display: grid;
     grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
     gap: 2rem;
-    margin-bottom: 4rem;
     padding: clamp(1.2rem, 4vw, 2rem);
 }
 
+.app-preview {
+    margin-bottom: 1rem;
+}
+
+.access {
+    margin-bottom: 4rem;
+}
+
+.app-preview p,
 .access p {
     margin: 0;
     color: var(--muted);
     line-height: 1.55;
 }
 
+.app-preview .button,
 .access .button {
     margin-top: 1.5rem;
 }
@@ -254,6 +266,7 @@ h2 {
     .site-header,
     .nav,
     .overview,
+    .app-preview,
     .access {
         display: block;
     }
@@ -275,6 +288,7 @@ h2 {
         margin-top: 0.75rem;
     }
 
+    .app-preview p,
     .access p {
         margin-top: 1.4rem;
     }
