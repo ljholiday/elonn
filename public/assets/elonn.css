@@ -354,6 +354,52 @@ h2 {
     overflow-wrap: anywhere;
 }
 
+.auth-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 80;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+}
+
+.auth-modal[hidden] {
+    display: none;
+}
+
+.auth-modal__backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(7, 8, 6, 0.78);
+}
+
+.auth-modal__panel {
+    position: relative;
+    z-index: 1;
+    width: min(460px, 100%);
+}
+
+.auth-modal__panel.account-page {
+    display: block;
+    min-height: auto;
+    padding: 0;
+    background: none;
+}
+
+.auth-modal__close {
+    position: absolute;
+    top: 0.8rem;
+    right: 0.8rem;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: rgba(7, 8, 6, 0.68);
+    color: var(--text);
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.78rem;
+    font-weight: 800;
+}
+
 @media (max-width: 820px) {
     .site-header,
     .nav,

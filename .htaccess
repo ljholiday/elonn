@@ -1,32 +1,16 @@
-# Domain-specific .htaccess file
-# (Place in domain subdirectories like /public_html/motorheadmeditation.com/)
-
-# Set default index files and enable server-side includes
-DirectoryIndex index.html index.php index.shtml index.htm
-AddHandler server-parsed .shtml
-Options Indexes FollowSymLinks Includes
-
-# Custom error documents
-ErrorDocument 404 /404.shtml
-ErrorDocument 500 /500.shtml
-
-# Prevent directory listings
+DirectoryIndex index.php index.html
 Options -Indexes
 
-# Deny access to .htaccess files
 <FilesMatch "^\.ht">
     Require all denied
 </FilesMatch>
 
-# Force HTTPS (uncomment if needed)
-# RewriteEngine On
-# RewriteCond %{HTTPS} off
-# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    RewriteRule ^account/?$ account.php [L]
-    RewriteRule ^account/login/?$ account.php [L]
-    RewriteRule ^account/register/?$ account.php [L]
+    RewriteCond %{DOCUMENT_ROOT}/public%{REQUEST_URI} -f
+    RewriteRule ^(.*)$ public/$1 [L]
+
+    RewriteCond %{REQUEST_URI} !^/public/
+    RewriteRule ^(.*)$ public/index.php [L]
 </IfModule>
